@@ -1,0 +1,10 @@
+#Write a program that prints which vowels are missing.
+def missing_vowels(string):
+    vowels = ['a','e','i','o','u']
+    missing_vowels = []
+    for vowel in vowels:
+        if vowel not in string:
+            missing_vowels.append(vowel)
+    print("Missing: " + ', '.join(missing_vowels))
+    
+missing_vowels(str(input("enter the string")))
